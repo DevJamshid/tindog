@@ -8,7 +8,7 @@ body {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 h1 {
@@ -64,12 +64,16 @@ p {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* Features */
 
 #features {
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
 }
 
 .feature-box {
@@ -101,7 +105,7 @@ p {
 }
 
 .carousel-item {
-    padding: 7% 15%;
+  padding: 7% 15%;
 }
 
 /* Press */
@@ -115,4 +119,57 @@ p {
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Sectiom */
+
+#cta {
+  padding: 7% 15%;
+  color: white;
+  text-align: center;
+  background-color: #ff4c68;
+}
+
+.cta-heading {
+  font-family: "Mulish", sans-serif;
+  font-size: 3.5rem;
+  line-height: normal;
+}
+
+/* Footer Section */
+
+#footer {
+  padding: 7% 15%;
+  background-color: white;
+  text-align: center;
+}
+
+.footer-links {
+  margin: 20px 10px;
+}
+
+.footer-links:hover {
+  color: #ff4c68;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
